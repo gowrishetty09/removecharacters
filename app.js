@@ -1,11 +1,10 @@
 const express = require('express');
 const app = express();
-// const port = 3000;
 const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const homeRouter = require('./routes/index')
 const removeExtraCharsRoute = require('./routes/removeExtraChars');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 const swaggerDefinition = {
   info: {
     title: 'Remove Consecutive Characters',
