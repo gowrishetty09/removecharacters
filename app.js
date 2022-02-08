@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+// const port = 3000;
 const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const homeRouter = require('./routes/index')
@@ -46,6 +46,6 @@ const swaggerSpec = swaggerJSDoc(options);
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 
-app.listen(port, function () {
-  console.log(`Example app listening on port ${port}!`)
+app.listen(PORT, function () {
+  console.log(`Example app listening on port ${PORT}!`)
 });
